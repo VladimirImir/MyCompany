@@ -1,0 +1,7 @@
+C:\Users\Mers\Documents\C#\MyCompany\MyCompany\obj\Debug\MyCompany.csprojAssemblyReference.cache
+C:\Users\Mers\Documents\C#\MyCompany\MyCompany\obj\Debug\MyCompany.csproj.CoreCompileInputs.cache
+C:\Users\Mers\Documents\C#\MyCompany\MyCompany\bin\Debug\MyCompany.exe.config
+C:\Users\Mers\Documents\C#\MyCompany\MyCompany\bin\Debug\MyCompany.exe
+C:\Users\Mers\Documents\C#\MyCompany\MyCompany\bin\Debug\MyCompany.pdb
+C:\Users\Mers\Documents\C#\MyCompany\MyCompany\obj\Debug\MyCompany.exe
+C:\Users\Mers\Documents\C#\MyCompany\MyCompany\obj\Debug\MyCompany.pdb
