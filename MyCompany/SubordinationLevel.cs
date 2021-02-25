@@ -12,6 +12,9 @@ namespace MyCompany
         General_Director,
         Commercial_Director,
         Financial_Director,
+        JuniorManagers,
+        MiddleManagers,
+        SeniorManagers,
         Meneger
     }
 }

@@ -13,6 +13,8 @@ namespace MyCompany
     {
         private bool _isWorking;
         private string _workDescription;
+        public MyCompany myCompany;
+        public SubordinationLevel subordinationLevel;
         public bool IsWorking
         {
             get
@@ -55,15 +57,20 @@ namespace MyCompany
         }
         public Worker(string name, string surname, string patronymic, DateTime birthDate,
                         Gender gender, Nationality nationality, EducationLevel educationLevel, float salary,
-                        string workDescription)
+                        string workDescription, MyCompany myCompany, SubordinationLevel subordinationLevel)
             : base(name, surname, patronymic, birthDate, gender, nationality, educationLevel, salary)
         {
+            this.myCompany = myCompany;
+            this.subordinationLevel = subordinationLevel;
             _isWorking = false;
             this.NextTask(workDescription);
         }
         public override string ToString()
         {
-            return base.ToString() +
+            return $"Worker: \n\t" +
+                $"COMPANY: {myCompany} ;\n\t" +
+                $"Subordinate: {subordinationLevel} ;\n\t\n\t" +
+                base.ToString() +
                 $"\n\tStatus Working: {IsWorking}; " +
                 $"\n\tCurrent Work: {_workDescription}";
         }

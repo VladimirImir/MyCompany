@@ -4,3 +4,4 @@ C:\Users\Mers\Documents\C#\MyCompany\MyCompany\bin\Debug\MyCompany.exe
 C:\Users\Mers\Documents\C#\MyCompany\MyCompany\bin\Debug\MyCompany.pdb
 C:\Users\Mers\Documents\C#\MyCompany\MyCompany\obj\Debug\MyCompany.exe
 C:\Users\Mers\Documents\C#\MyCompany\MyCompany\obj\Debug\MyCompany.pdb
+C:\Users\Mers\Documents\C#\MyCompany\MyCompany\obj\Debug\MyCompany.csprojAssemblyReference.cache

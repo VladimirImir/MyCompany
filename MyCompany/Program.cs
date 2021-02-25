@@ -28,6 +28,18 @@ namespace MyCompany
                                         Gender.MALE, Nationality.Ukrainian,DirectorLevel.Financial_Director, 8000,
                                         MyCompany.COMFY, SubordinationLevel.OwnerOfCompany);
 
+            // Бухгалтер.
+
+            Accountant accountant1 = new Accountant("Яна", "Зубченко", "Семеновна", new DateTime(1987, 9, 6),
+                            Gender.FAMALE, Nationality.Ukrainian, EducationLevel.Higher, 4500,
+                            AccountandLevel.AccountantCashier, MyCompany.COMFY, SubordinationLevel.Financial_Director);
+            Accountant accountant2 = new Accountant("Тамара", "Морозук", "Стантиславовна", new DateTime(1972, 12, 16),
+                            Gender.FAMALE, Nationality.Ukrainian, EducationLevel.Higher, 4500,
+                            AccountandLevel.AssetAccountant, MyCompany.COMFY, SubordinationLevel.Financial_Director);
+            Accountant accountant3 = new Accountant("Яна", "Зубченко", "Семеновна", new DateTime(1975, 8, 10),
+                            Gender.FAMALE, Nationality.Ukrainian, EducationLevel.Higher, 4500,
+                            AccountandLevel.VAT_Accountant, MyCompany.COMFY, SubordinationLevel.Financial_Director);
+
             // Менеджера.
 
             Meneger meneger1 = new Meneger("Галина", "Гладко", "Григорьевна", new DateTime(1986, 1, 21),
@@ -43,135 +55,92 @@ namespace MyCompany
                                         ManagerLevel.MiddleManagers, 393, MyCompany.COMFY,
                                         SubordinationLevel.Financial_Director);
 
-            Console.ForegroundColor = ConsoleColor.Magenta;
+            // Работники менеждера #1.
+
+            Worker worker1 = new Worker("Катерина", "Смирна", "Андреевна", new DateTime(1998, 12, 14),
+                                        Gender.FAMALE, Nationality.Ukrainian, EducationLevel.Higher, 3400,
+                                        "Аналитик комп'ютерних систем", MyCompany.COMFY, SubordinationLevel.SeniorManagers);            
+            Worker worker2 = new Worker("Василий", "Шпак", "Васильевич", new DateTime(1981, 2, 15),
+                                        Gender.MALE, Nationality.Ukrainian, EducationLevel.Higher, 3750,
+                                        "Продавец-консультант", MyCompany.COMFY, SubordinationLevel.SeniorManagers);            
+            Worker worker3 = new Worker("Лидия", "Ковалева", "Леонидовна", new DateTime(1972, 4, 30),
+                                        Gender.FAMALE, Nationality.Ukrainian, EducationLevel.Higher, 1700,
+                                        "Уборщица", MyCompany.COMFY, SubordinationLevel.SeniorManagers);            
+            Worker worker4 = new Worker("Олег", "Сорока", "Владимировия", new DateTime(1985, 6, 9),
+                                        Gender.MALE, Nationality.Ukrainian, EducationLevel.Higher, 2400,
+                                        "Личный водитель", MyCompany.COMFY, SubordinationLevel.SeniorManagers);            
+            Worker worker5 = new Worker("Светлана", "Бунина", "Ивановна", new DateTime(1994, 1, 13),
+                                        Gender.FAMALE, Nationality.Ukrainian, EducationLevel.Higher, 900,
+                                        "Касир", MyCompany.COMFY, SubordinationLevel.SeniorManagers);
+
+            // Работники менеждера #2.
+
+            Worker worker6 = new Worker("Людмила", "Чума", "Игоревна", new DateTime(1992, 2, 2),
+                                        Gender.FAMALE, Nationality.Ukrainian, EducationLevel.Higher, 3400,
+                                        "Аналитик комп'ютерних систем", MyCompany.COMFY, SubordinationLevel.MiddleManagers);
+            Worker worker7 = new Worker("Петро", "Рог", "Иванович", new DateTime(1979, 12, 1),
+                                        Gender.MALE, Nationality.Ukrainian, EducationLevel.Higher, 3750,
+                                        "Продавец-консультант", MyCompany.COMFY, SubordinationLevel.MiddleManagers);
+            Worker worker8 = new Worker("Ольга", "Мищенко", "Романовна", new DateTime(1968, 4, 30),
+                                        Gender.FAMALE, Nationality.Ukrainian, EducationLevel.Higher, 1700,
+                                        "Уборщица", MyCompany.COMFY, SubordinationLevel.MiddleManagers);
+            Worker worker9 = new Worker("Олександ", "Четвертый", "Одлександрович", new DateTime(1984, 3, 19),
+                                        Gender.MALE, Nationality.Ukrainian, EducationLevel.Higher, 2400,
+                                        "Личный водитель", MyCompany.COMFY, SubordinationLevel.MiddleManagers);
+            Worker worker10 = new Worker("Леся", "Лазаренко", "Ивановна", new DateTime(1990, 11, 24),
+                                        Gender.FAMALE, Nationality.Ukrainian, EducationLevel.Higher, 900,
+                                        "Касир", MyCompany.COMFY, SubordinationLevel.MiddleManagers);
+
+            // Работники менеждера #3.
+
+            Worker worker11 = new Worker("Катерина", "Смирна", "Андреевна", new DateTime(1998, 12, 14),
+                                        Gender.FAMALE, Nationality.Ukrainian, EducationLevel.Higher, 3400,
+                                        "Аналитик комп'ютерних систем", MyCompany.COMFY, SubordinationLevel.MiddleManagers);
+            Worker worker12 = new Worker("Дмитрий", "Котовский", "Аркадьевич", new DateTime(1988, 12, 5),
+                                        Gender.MALE, Nationality.Ukrainian, EducationLevel.Higher, 3750,
+                                        "Продавец-консультант", MyCompany.COMFY, SubordinationLevel.MiddleManagers);
+            Worker worker13 = new Worker("Лидия", "Ковалева", "Леонидовна", new DateTime(1972, 4, 30),
+                                        Gender.FAMALE, Nationality.Ukrainian, EducationLevel.Higher, 1700,
+                                        "Уборщица", MyCompany.COMFY, SubordinationLevel.MiddleManagers);
+            Worker worker14 = new Worker("Олег", "Сорока", "Владимировия", new DateTime(1985, 6, 9),
+                                        Gender.MALE, Nationality.Ukrainian, EducationLevel.Higher, 2400,
+                                        "Личный водитель", MyCompany.COMFY, SubordinationLevel.MiddleManagers);
+            Worker worker15 = new Worker("Светлана", "Бунина", "Ивановна", new DateTime(1994, 1, 13),
+                                        Gender.FAMALE, Nationality.Ukrainian, EducationLevel.Higher, 900,
+                                        "Касир", MyCompany.COMFY, SubordinationLevel.MiddleManagers);
+
+            Console.ForegroundColor = ConsoleColor.Cyan;
             Console.WriteLine(ownerOfCompany);
             Console.ForegroundColor = ConsoleColor.Green;
             Console.WriteLine(director1);
             Console.WriteLine(director2);
             Console.WriteLine(director3);
+            Console.ForegroundColor = ConsoleColor.Red;
+            Console.WriteLine(accountant1);
+            Console.WriteLine(accountant2);
+            Console.WriteLine(accountant3);
             Console.ForegroundColor = ConsoleColor.Yellow;
             Console.WriteLine(meneger1);
             Console.WriteLine(meneger2);
             Console.WriteLine(meneger3);
-
-
-
-
-            // Работники.
-
-            Worker worker3 = new Worker("Олександр", "Гринюк", "Миколайович", new DateTime(1978, 8, 18),
-                                        Gender.MALE, Nationality.Ukrainian, EducationLevel.Higher, 15000,
-                                        "Колоть дрова");            
-            Worker worker4 = new Worker("Олександр", "Гринюк", "Миколайович", new DateTime(1978, 8, 18),
-                                        Gender.MALE, Nationality.Ukrainian, EducationLevel.Higher, 15000,
-                                        "Колоть дрова");            
-            Worker worker5 = new Worker("Олександр", "Гринюк", "Миколайович", new DateTime(1978, 8, 18),
-                                        Gender.MALE, Nationality.Ukrainian, EducationLevel.Higher, 15000,
-                                        "Колоть дрова");            
-            Worker worker6 = new Worker("Олександр", "Гринюк", "Миколайович", new DateTime(1978, 8, 18),
-                                        Gender.MALE, Nationality.Ukrainian, EducationLevel.Higher, 15000,
-                                        "Колоть дрова");            
-            Worker worker7 = new Worker("Олександр", "Гринюк", "Миколайович", new DateTime(1978, 8, 18),
-                                        Gender.MALE, Nationality.Ukrainian, EducationLevel.Higher, 15000,
-                                        "Колоть дрова");            
-            Worker worker8 = new Worker("Олександр", "Гринюк", "Миколайович", new DateTime(1978, 8, 18),
-                                        Gender.MALE, Nationality.Ukrainian, EducationLevel.Higher, 15000,
-                                        "Колоть дрова");            
-            Worker worker9 = new Worker("Олександр", "Гринюк", "Миколайович", new DateTime(1978, 8, 18),
-                                        Gender.MALE, Nationality.Ukrainian, EducationLevel.Higher, 15000,
-                                        "Колоть дрова");            
-            Worker worker10 = new Worker("Олександр", "Гринюк", "Миколайович", new DateTime(1978, 8, 18),
-                                        Gender.MALE, Nationality.Ukrainian, EducationLevel.Higher, 15000,
-                                        "Колоть дрова");            
-            Worker worker11 = new Worker("Олександр", "Гринюк", "Миколайович", new DateTime(1978, 8, 18),
-                                        Gender.MALE, Nationality.Ukrainian, EducationLevel.Higher, 15000,
-                                        "Колоть дрова");            
-            Worker worker12 = new Worker("Олександр", "Гринюк", "Миколайович", new DateTime(1978, 8, 18),
-                                        Gender.MALE, Nationality.Ukrainian, EducationLevel.Higher, 15000,
-                                        "Колоть дрова");            
-            Worker worker13 = new Worker("Олександр", "Гринюк", "Миколайович", new DateTime(1978, 8, 18),
-                                        Gender.MALE, Nationality.Ukrainian, EducationLevel.Higher, 15000,
-                                        "Колоть дрова");            
-            Worker worker14 = new Worker("Олександр", "Гринюк", "Миколайович", new DateTime(1978, 8, 18),
-                                        Gender.MALE, Nationality.Ukrainian, EducationLevel.Higher, 15000,
-                                        "Колоть дрова");            
-            Worker worker15 = new Worker("Олександр", "Гринюк", "Миколайович", new DateTime(1978, 8, 18),
-                                        Gender.MALE, Nationality.Ukrainian, EducationLevel.Higher, 15000,
-                                        "Колоть дрова");            
-            Worker worker16 = new Worker("Олександр", "Гринюк", "Миколайович", new DateTime(1978, 8, 18),
-                                        Gender.MALE, Nationality.Ukrainian, EducationLevel.Higher, 15000,
-                                        "Колоть дрова");            
-            Worker worker17 = new Worker("Олександр", "Гринюк", "Миколайович", new DateTime(1978, 8, 18),
-                                        Gender.MALE, Nationality.Ukrainian, EducationLevel.Higher, 15000,
-                                        "Колоть дрова");            
-            Worker worker18 = new Worker("Олександр", "Гринюк", "Миколайович", new DateTime(1978, 8, 18),
-                                        Gender.MALE, Nationality.Ukrainian, EducationLevel.Higher, 15000,
-                                        "Колоть дрова");            
-            Worker worker19 = new Worker("Олександр", "Гринюк", "Миколайович", new DateTime(1978, 8, 18),
-                                        Gender.MALE, Nationality.Ukrainian, EducationLevel.Higher, 15000,
-                                        "Колоть дрова");            
-            Worker worker20 = new Worker("Олександр", "Гринюк", "Миколайович", new DateTime(1978, 8, 18),
-                                        Gender.MALE, Nationality.Ukrainian, EducationLevel.Higher, 15000,
-                                        "Колоть дрова");            
-            Worker worker21 = new Worker("Олександр", "Гринюк", "Миколайович", new DateTime(1978, 8, 18),
-                                        Gender.MALE, Nationality.Ukrainian, EducationLevel.Higher, 15000,
-                                        "Колоть дрова");            
-            Worker worker22 = new Worker("Олександр", "Гринюк", "Миколайович", new DateTime(1978, 8, 18),
-                                        Gender.MALE, Nationality.Ukrainian, EducationLevel.Higher, 15000,
-                                        "Колоть дрова");            
-            Worker worker23 = new Worker("Олександр", "Гринюк", "Миколайович", new DateTime(1978, 8, 18),
-                                        Gender.MALE, Nationality.Ukrainian, EducationLevel.Higher, 15000,
-                                        "Колоть дрова");            
-            Worker worker24 = new Worker("Олександр", "Гринюк", "Миколайович", new DateTime(1978, 8, 18),
-                                        Gender.MALE, Nationality.Ukrainian, EducationLevel.Higher, 15000,
-                                        "Колоть дрова");            
-            Worker worker25 = new Worker("Олександр", "Гринюк", "Миколайович", new DateTime(1978, 8, 18),
-                                        Gender.MALE, Nationality.Ukrainian, EducationLevel.Higher, 15000,
-                                        "Колоть дрова");
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*            ListOfWorkers listOfWorkers = new ListOfWorkers();
-            for (int i = 0; i < 25; i++)
-            {
-
-                listOfWorkers.AddWorker(new Worker("worker_" + 1, "tested", "tested",
-                                                    DateTime.Now, Gender.FAMALE, Nationality.Argentina,
-                                                    EducationLevel.Higher, 1000, "Рабоатет."));
-            }
-            Console.WriteLine(listOfWorkers);*/
-
-
-            /*                        listOfWorkers[5] = new Worker();
-                                    Console.WriteLine(((Worker)listOfWorkers[5]).Name); // по индексу.*/
-
-            /*            Console.WriteLine(((Worker)listOfWorkers[listOfWorkers.Workers[5]]).Name);// через ссылку на объект.
-                        listOfWorkers[listOfWorkers.Workers[6]] = new Worker();
-                        Console.WriteLine(((Worker)listOfWorkers[listOfWorkers.Workers[6]]));
-                        Console.WriteLine(worker);*/
-            /*            Worker worker = new Worker("Владимир", "Полтавченко", "Русланович", new DateTime(1979, 11, 28),
-                                                                    Gender.MALE, Nationality.Ukrainian, EducationLevel.Higher, 15000,
-                                                                    "Колоть дрова");
-                        Worker worker1 = new Worker("Владимир", "Полтавченко", "Русланович", new DateTime(1979, 11, 28),
-                                                                    Gender.MALE, Nationality.Ukrainian, EducationLevel.Higher, 15000,
-                                                                    "Колоть дрова");
-                        Console.WriteLine(worker);
-                        Console.WriteLine(worker1);*/
+            Console.ForegroundColor = ConsoleColor.Magenta;
+            Console.WriteLine(worker1);
+            Console.WriteLine(worker2);
+            Console.WriteLine(worker3);
+            Console.WriteLine(worker4);
+            Console.WriteLine(worker5);
+            Console.ForegroundColor = ConsoleColor.Red;
+            Console.WriteLine(worker6);
+            Console.WriteLine(worker7);
+            Console.WriteLine(worker8);
+            Console.WriteLine(worker9);
+            Console.WriteLine(worker10);
+            Console.ForegroundColor = ConsoleColor.Blue;
+            Console.WriteLine(worker11);
+            Console.WriteLine(worker12);
+            Console.WriteLine(worker13);
+            Console.WriteLine(worker14);
+            Console.WriteLine(worker15);
 
         }
     }
